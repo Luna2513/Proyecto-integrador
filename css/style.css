@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .navbar, .footer {
+    background-color: #2eccb4;
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .form-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .form-box img {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .form-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form-box button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .navbar, .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .form-box {
+      max-width: 90%;
+    }
+  }
+  
+  
