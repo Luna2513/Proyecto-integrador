@@ -4,17 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ingreso de Dispositivo</title>
-<link rel="stylesheet" href="./css/styleDisp.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body class="BodyDispositivo">
 
-
+<header>
 <div class="navbar">
-    <div><a href="index.html">TechFix Solutions</a></div>
+    <div><a href="index.html"><p class="logo">TechFix Solutions</p></a></div>
     <div class="top-right">
-    <button class="NavButton"><a href="index.html">Inicio</a></button>
+        <button class="NavButton"><a href="LogIn.html"><p class="logo">Log in</p></a></button>
     </div>
 </div>
+</header>
 
 <div class="container">
     <div class="form-box">
@@ -24,12 +28,14 @@
         <input type="text" placeholder="Modelo" required>
         <input type="text" placeholder="Número de serie" required>
         <input type="text" placeholder="Nombre del cliente" required>
-        <textarea placeholder="Problema que presenta" required></textarea>
-        <button class="Dispositivo">Editar</button>
-        <button class="Dispositivo">Eliminar</button>
-        <button class="Dispositivo"><a href="index.html">Regresar</a></button>
-        <button class="Dispositivo">Guardar</button>
-    </div>
+        <textarea placeholder="Problema que presenta" required></textarea> 
+        <div class="button-group">
+            <button class="Dispositivo">Editar</button>
+            <button class="Dispositivo">Eliminar</button>
+            <button class="Dispositivo"><a href="index.html">Regresar</a></button>
+            <button class="Dispositivo">Guardar</button>
+        </div>
+    </div>  
 </div>
 
 <footer class="footer">

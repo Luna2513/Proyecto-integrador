@@ -1,80 +1,29 @@
-* {
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-body {
+.BodyDispositivo {
     font-family: Arial, sans-serif;
+    background-image: url('../img/v882-aew-57-e.JPG');
+    background-size: cover;
+}
+.pagina-inicio{
+    font-family: "Open Sans", sans-serif;
     background-image: url('../img/Fondo.jpg');
     background-size: cover;
   }
   
-.navbar, .footer {
-    background-color: #2eccb4;
-    padding: 10px 20px;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .container {
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-
-.form-box {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    text-align: center;
-    backdrop-filter: blur(10px);
-    max-width: 600px;
-    width: 100%;
-    height: 515px;
-  }
-
-  
-  .form-box img {
-    width: 60px;
-    margin-bottom: 20px;
-  }
-  
-  .form-box input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-  }
-  
-.Dispositivo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 10px 0;
-  }
-
-  .form-box textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    resize: none;
-    font-family: inherit;
-  }
-
+a{
+  text-decoration: none;
+}
 .NavButton {
   background-color: rgb(141, 252, 239);
   color: rgb(255, 255, 255);
@@ -85,8 +34,131 @@ body {
   cursor: pointer;
   width: 100%;
 }
+.navbar {
+    background-color: #2eccb4;
+    padding: 1rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2.3rem;
+}
+.logo{
+  color: black;
+}
+.footer{
+    background-color: #2eccb4;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2.3rem; 
+    margin-top: 8.6rem;   
+}
 
-  .form-box button {
+  
+  .container, .container-log, .container-registro{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  /*Style Inicio*/
+  .menu-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 481px;
+}
+
+.menu-box h2 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.menu-box a button {
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+}
+
+.menu-box a button:hover {
+    background-color: #2eccb4;
+    color: black;
+}
+
+/*Dispositivo*/
+.container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .form-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    width: 100%;
+
+}
+
+.BodyDispositivo .form-box img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.BodyDispositivo .form-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+.BodyDispositivo .Dispositivo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+.BodyDispositivo .form-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-family: inherit;
+  }
+  
+.BodyDispositivo .form-box button {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -96,17 +168,118 @@ body {
     cursor: pointer;
     width: 100%;
   }
-  
-  
-  @media (max-width: 600px) {
-    .navbar, .footer {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .form-box {
-      max-width: 90%;
-    }
+
+  .button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center; 
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.button-group button {
+  max-width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #2eccb4;
+  color: black;
+}
+
+.button-group button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+/*log in*/
+.container-log .form-box{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
   }
-  
-  
+
+  .container-log .form-box img{
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  .container-log .form-box input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  .container-log .form-box textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-family: inherit;
+  }
+  .button{
+  max-width: 150px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  .button:hover{
+    background-color: #2eccb4;
+  color: black;
+  }
+  /*Registro*/
+  .container-registro .form-box{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 100%;
+    height: 410px;
+  }
+  .container-registro .form-box img{
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  .container-registro .form-box input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  .container-registro .form-box textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-family: inherit;
+  }
