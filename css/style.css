@@ -11,7 +11,7 @@ html {
 }
 
 .BodyDispositivo {
-    font-family: "Open Sans", sans-serif;
+    font-family: Arial, sans-serif;
     background-image: url('../img/v882-aew-57-e.JPG');
     background-size: cover;
 }
@@ -65,9 +65,11 @@ a{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 10px;
   }
   /*Style Inicio*/
-  .menu-box {
+
+  .menu-box, .intro {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 30px;
@@ -79,11 +81,23 @@ a{
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 481px;
+    height: 380px;
 }
 
-.menu-box h2 {
-    font-size: 4.5rem;
+.intro{
+  font-size: 15px;
+  text-align: center;
+}
+
+.intro p{
+color: #a1c6db;
+text-shadow: #849cb4;
+
+
+}
+
+h2 {
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
