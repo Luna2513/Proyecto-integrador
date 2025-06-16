@@ -11,14 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body class="general pagina-inicio">
+
 <header>
   <div class="navbar">
-    <div><a href="index.html"><p class="logo">TechFix Solutions</p></a></div>
-    <div class="top-right">
-      <button class="NavButton"><a href="registro.html"><p class="logo">Sign In</p></a></button>
+    <div>
+      <a href="index.html"><p class="logo">TechFix Solutions</p></a>
+    </div>
+    <div class="navbar-right">
+      
+    <!-- Menú desplegable "Consultar orden" -->
+   
+      <div class="dropdown">
+        <button class="nav-btn">Consultar orden</button>
+        <div class="dropdown-content">
+          <form class="track-form">
+            <label for="serial">Serie ID</label>
+            <p class="consulta-text">Como Usuario, revisa el estado de tu orden.</p>
+            <input type="text" id="serial" name="serial" placeholder="Número de serie de dispositivo" required>
+            <button type="submit">Consultar</button>
+          </form>
+        </div>
+      </div>
+    <ul class="nav-list">
+    <li><a href="./registro.html" class="nav-btn">Registrarse</a></li>
+  </ul>
     </div>
   </div>
+  </div>
 </header>
+
     <main>
 
       <div class="container-log">
@@ -27,7 +48,7 @@
           <input type="text" name="username" id="username" placeholder="Username" required>
           <input type="password" id="Password" placeholder="Password" required>
 
-          <button class="button">Log In</button>
+          <button class="button">Iniciar Sesión</button>
         </div>
       </div>
 
@@ -41,4 +62,3 @@
   </footer>
 </body>
 </html>
-
