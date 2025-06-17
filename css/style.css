@@ -24,16 +24,8 @@ html {
 a{
   text-decoration: none;
 }
-.NavButton {
-  background-color: rgb(141, 252, 239);
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 100%;
-}
+
+
 .navbar {
     background-color: #2eccb4;
     padding: 1rem;
@@ -44,6 +36,39 @@ a{
     flex-wrap: wrap;
     font-size: 2.3rem;
 }
+.navbar-right{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list .nav-link {
+  background-color: rgb(141, 252, 239); 
+  color:rgb(15, 15, 15);
+  padding: 10px 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-list .nav-link:hover {
+  background-color: black;
+  color: white;
+}
+
+
 .logo{
   color: black;
 }
@@ -67,6 +92,8 @@ a{
     padding: 20px;
     gap: 10px;
   }
+
+  
   /*Style Inicio*/
 
   .menu-box, .intro {
@@ -336,4 +363,80 @@ h2 {
   }  
   .tit{
     font-size: 24px;
+
   }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-btn {
+  background-color: rgb(141, 252, 239); 
+  color: rgb(15, 15, 15);
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 150px;  
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #0e100f;
+    color: rgb(255, 255, 255);
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; /* Para alinear el menú a la derecha */
+  background-color: white;
+  min-width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.track-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-form input {
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.track-form button {
+  background-color: rgb(14, 13, 12);
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.track-form button:hover {
+  background-color:  #a1c6db;
+}
+
+.consulta-text{
+  font-size: 12px;
+  padding: 8px;
+}
+=======
+  }
+

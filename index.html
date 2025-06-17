@@ -12,14 +12,42 @@
 <body class="pagina-inicio">
 <header>
   <div class="navbar">
+
+    <div>
+      <a href="index.html"><p class="logo">TechFix Solutions</p></a>
+    </div>
+    <div class="navbar-right">
+      
+    <!-- Menú desplegable "Consultar orden" -->
+   
+      <div class="dropdown">
+        <button class="nav-btn">Consultar orden</button>
+        <div class="dropdown-content">
+          <form class="track-form">
+            <label for="serial">Serie ID</label>
+            <p class="consulta-text">Como Usuario, revisa el estado de tu orden.</p>
+            <input type="text" id="serial" name="serial" placeholder="Número de serie de dispositivo" required>
+            <button type="submit">Consultar</button>
+          </form>
+        </div>
+      </div>
+    <ul class="nav-list">
+    <li><a href="LogIn.html" class="nav-btn">Iniciar Sesión</a></li>
+    <li><a href="registro.html" class="nav-btn">Registrarse</a></li>
+    <li><a href="Dispositivos.html" class="nav-btn">Ingreso de dispositivo</a></li>
+  </ul>
+
     <div><a href="index.html"><p class="logo">TechFix Solutions</p></a></div>
     <div class="top-right">
       <button class="NavButton"><a href="./tracker.html"><p class="logo">Tracker</p></a></button>
+
     </div>
+  </div>
   </div>
 </header>
 
   <div class="container">
+   
     <div class="intro">
       <h2>Sobre nosotros...</h2>
       <p class="intr">En TechFix Solutions, entendemos la importancia de tus dispositivos en 
