@@ -447,3 +447,88 @@ h2 {
   padding: 8px;
 }
 
+/* ====== Estilo Responsive ====== */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+  }
+
+  .navbar-right,
+  .top-right,
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .NavButton,
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .intro-text,
+  .intro-images {
+    flex: 1 1 100%;
+  }
+
+  .intro-section h2 {
+    font-size: 3.5em;
+  }
+
+  .tabla-dispositivos th,
+  .tabla-dispositivos td {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .container,
+  .container-log,
+  .container-registro,
+  .container-view {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .form-box {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .button-group button {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    left: 0;
+    right: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .track-form input,
+  .track-form button {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
